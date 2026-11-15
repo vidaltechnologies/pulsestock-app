@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/vidaltechnologies/pulsestock/actions/workflows/ci.yml"><img src="https://github.com/vidaltechnologies/pulsestock/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/vidaltechnologies/pulsestock-app/actions/workflows/ci.yml"><img src="https://github.com/vidaltechnologies/pulsestock-app/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <img src="https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs" alt="Next.js 16">
   <img src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black" alt="React 19">
   <img src="https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white" alt="TypeScript">
@@ -90,8 +90,8 @@ The rules that must never fail live in PostgreSQL, not only in the UI: role-base
 Requirements: Node.js 20.9 or later and a [Supabase](https://supabase.com) project (or Docker, to run Supabase locally).
 
 ```bash
-git clone https://github.com/vidaltechnologies/pulsestock.git
-cd pulsestock
+git clone https://github.com/vidaltechnologies/pulsestock-app.git
+cd pulsestock-app
 npm install
 cp .env.example .env.local   # fill in the Supabase URL and publishable key
 npm run dev                  # http://localhost:3000
@@ -160,7 +160,7 @@ To turn it on, fill in the Sentry variables from [.env.example](.env.example) in
 ## Code structure
 
 ```text
-pulsestock/
+pulsestock-app/
 ├── src/
 │   ├── app/
 │   │   ├── (app)/          # signed-in screens: dashboard, products, inventory, customers, orders, users
