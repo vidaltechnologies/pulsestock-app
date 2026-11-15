@@ -285,12 +285,12 @@ Os testes só aceitam rodar contra `localhost`, porque criam produtos, clientes 
 
 O app roda na Vercel sem configuração extra (Next.js é detectado sozinho). Só duas variáveis são necessárias, e as duas são públicas: a URL do projeto e a chave publicável. A chave secreta do Supabase não é usada pelo app.
 
-1. Em [vercel.com/new](https://vercel.com/new), importe o repositório `vidaltechnologies/pulsestock`.
+1. Em [vercel.com/new](https://vercel.com/new), importe o repositório `vidaltechnologies/pulsestock-app`.
 2. Em **Environment Variables**, adicione:
    - `NEXT_PUBLIC_SUPABASE_URL` = `https://qhkemlxytksotndoxtak.supabase.co`
    - `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` = a chave publicável (Supabase → Project Settings → API Keys)
 3. Clique em **Deploy**.
-4. No Supabase, em **Authentication → URL Configuration**, troque o **Site URL** pelo endereço da Vercel (por exemplo `https://pulsestock.vercel.app`). Os e-mails de convite e de recuperação de senha passam a apontar para o site publicado.
+4. No Supabase, em **Authentication → URL Configuration**, troque o **Site URL** pelo endereço da Vercel (por exemplo `https://pulsestock-app.vercel.app`). Os e-mails de convite e de recuperação de senha passam a apontar para o site publicado.
 
 Cada push na `main` gera um novo deploy, e cada pull request ganha um endereço de prévia.
 
