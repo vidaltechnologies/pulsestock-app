@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/vidaltechnologies/pulsestock/actions/workflows/ci.yml"><img src="https://github.com/vidaltechnologies/pulsestock/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/vidaltechnologies/pulsestock-app/actions/workflows/ci.yml"><img src="https://github.com/vidaltechnologies/pulsestock-app/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <img src="https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs" alt="Next.js 16">
   <img src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black" alt="React 19">
   <img src="https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white" alt="TypeScript">
@@ -90,8 +90,8 @@ Las reglas que no pueden fallar viven en PostgreSQL, no solo en la pantalla: per
 Requisitos: Node.js 20.9 o superior y un proyecto en [Supabase](https://supabase.com) (o Docker, para ejecutar Supabase localmente).
 
 ```bash
-git clone https://github.com/vidaltechnologies/pulsestock.git
-cd pulsestock
+git clone https://github.com/vidaltechnologies/pulsestock-app.git
+cd pulsestock-app
 npm install
 cp .env.example .env.local   # completa la URL y la clave publicable de Supabase
 npm run dev                  # http://localhost:3000
@@ -160,7 +160,7 @@ Para activarlo, completa en `.env.local` (o en las variables de entorno del host
 ## Estructura del código
 
 ```text
-pulsestock/
+pulsestock-app/
 ├── src/
 │   ├── app/
 │   │   ├── (app)/          # pantallas con sesión: panel, productos, inventario, clientes, pedidos, usuarios
